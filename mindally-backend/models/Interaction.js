@@ -4,6 +4,7 @@ const interactionSchema = new mongoose.Schema({
   userId: String,
   message: String,
   emotion: String,
+  context: String,
   timestamp: { type: Date, default: Date.now },
 });
 
