@@ -1,3 +1,4 @@
+# decrepitated this model
 from textblob import TextBlob
 from flask import Flask, request, jsonify
 
