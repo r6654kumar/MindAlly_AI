@@ -5,15 +5,28 @@
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
+  height: 100vh; 
 }
 
 .messagesContainer {
   flex: 1;
   overflow-y: auto;
-  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 10px;
+  padding-bottom: 10px;
+  max-height: 70vh; 
+  scrollbar-width: thin; 
+  scrollbar-color: #ccc transparent; 
+}
+
+.messagesContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messagesContainer::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px;
 }
 
 .userMessage {
@@ -65,6 +78,7 @@
 .inputContainer {
   display: flex;
   gap: 10px;
+  padding-top: 10px;
 }
 
 .input {
